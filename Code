@@ -1,0 +1,43 @@
+namespace programming2_week__2_1_
+{
+    class class_course
+    {        
+            string name;
+            double grade;
+            int lecture_houres;
+            int practical_hourse;
+
+            public class_course(string name, double grade, int lecture_houres, int practical_hourse)
+            {
+                Name = name;
+                Grade = grade;
+                Lecture_Houres = lecture_houres;
+                Practical_Hourse = practical_hourse;
+            }
+            public double Grade
+            {
+                set;
+                get;
+            }
+            public int Lecture_Houres
+            {
+                set;
+                get;
+            }
+            public int Practical_Hourse
+            {
+                set;
+                get;
+            }
+            public string Name
+            {
+                set;
+                get;
+            }
+            public int calc_houres()
+            {
+                return (Lecture_Houres + Practical_Hourse) / 2;
+            }   
+
+    }
+}
